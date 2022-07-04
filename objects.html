@@ -12,14 +12,25 @@
 
         // Object Definition
         // Object Literal
-        const person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
-        //Multiple Line
+        // const person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
+        // Multiple Line
+        // const person = {
+        //     firstName: "John",
+        //     lastName: "Doe",
+        //     age: 50,
+        //     eyeColor: "blue"
+        // };
+
+        //Object Methods
         const person = {
             firstName: "John",
             lastName: "Doe",
-            age: 50,
-            eyeColor: "blue"
+            id: 5566,
+            fullName: function() {
+                return this.firstName + " " + this.lastName;
+            }
         };
+        document.getElementById("objects").innerHTML = person.fullName();
     </script>
 </body>
 </html>
